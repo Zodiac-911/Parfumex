@@ -1,0 +1,238 @@
+.cards-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 460px);
+  grid-template-rows: repeat(5, 220px);
+  grid-column-gap: 80px;
+  grid-row-gap: 60px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 8px 30px rgba(162, 61, 255, 0.15);
+}
+
+.card-img {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+.card:hover .card-img {
+  transform: scale(1.08);
+}
+
+.card-txt {
+  width: 50%;
+  height: 100%;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card-txt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #ffc107;
+}
+
+.star-icon {
+  fill: #ffc107;
+}
+
+.grid-price {
+  color: #a23dff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.wishlist-btn {
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #777;
+}
+
+.wishlist-btn:hover {
+  color: #ff4757;
+  border-color: #ff4757;
+}
+
+.add-to-cart {
+  flex: 1;
+  background: linear-gradient(45deg, #a23dff, #7a00ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(45deg, #7a00ff, #a23dff);
+}
+
+/* Grid positioning - keeping your exact layout */
+.card1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.card2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.card3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.card4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.card5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.card6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.card7 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.card8 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.card9 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.card10 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+/* Background images - keeping your original images */
+.card1 .card-img {
+  background-image: url(../assets/coco-chanel-card.webp);
+}
+.card2 .card-img {
+  background-image: url(../assets/parle-moi-de-parfum-papyrus-oud.webp);
+}
+.card3 .card-img {
+  background-image: url(../assets/JeanPaulGaultierLeMaleElixirEauDeParfum125ml_900x.webp);
+}
+.card4 .card-img {
+  background-image: url(../assets/Royal-2.webp);
+}
+.card5 .card-img {
+  background-image: url(../assets/tom-ford-noir-extreme.png);
+}
+.card6 .card-img {
+  background-image: url(../assets/Paco-Rabanne-Invictus.png);
+}
+.card7 .card-img {
+  background-image: url(../assets/11111111111111.jpg);
+}
+.card8 .card-img {
+  background-image: url(../assets/222222222.jpg);
+}
+.card9 .card-img {
+  background-image: url(../assets/333333333.jpg);
+}
+.card10 .card-img {
+  background-image: url(../assets/44444444.jpg);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .cards-grid-parent {
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cards-grid-parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+  }
+
+  /* Reset all grid areas for single column layout */
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10 {
+    grid-area: auto;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-img,
+  .card-txt {
+    width: 100%;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+
+  .card-txt {
+    padding: 20px;
+    height: auto;
+  }
+}

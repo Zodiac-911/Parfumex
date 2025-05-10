@@ -1,0 +1,102 @@
+.banner-container {
+  width: 100%;
+  display: flex;
+  background-color: #431370;
+  height: 360px;
+  border-radius: 28px;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  padding: 0 40px;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.banner-text h3 {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+/* Fade animation classes */
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+/* 🔁 Tablet Responsive Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .banner-container {
+    height: 300px; /* Reduce height for tablets */
+    margin-top: 100px;
+  }
+
+  .banner-text h1 {
+    font-size: 50px; /* Smaller heading */
+  }
+
+  .banner-text h3 {
+    font-size: 28px; /* Smaller subheading */
+  }
+}
+
+/* 🔁 Mobile Responsive Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center;
+    margin-top: 200px;
+  }
+
+  .banner-text h1 {
+    font-size: 40px; /* Smaller heading */
+  }
+
+  .banner-text h3 {
+    font-size: 24px; /* Smaller subheading */
+  }
+
+  .banner-container img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Adjust height proportionally */
+    margin-top: 20px; /* Space between text and image */
+  }
+}
+
+/* 🔁 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .banner-container {
+  }
+
+  .banner-text h1 {
+    font-size: 28px; /* Much smaller heading */
+  }
+
+  .banner-text h3 {
+    font-size: 18px; /* Much smaller subheading */
+  }
+
+  .banner-container img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Keep the height proportional */
+  }
+}
