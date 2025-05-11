@@ -2,6 +2,28 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FiHeart, FiShoppingBag, FiStar, FiChevronRight } from "react-icons/fi";
 import "../styles/female-category.css";
+import cet from "../assets/cet.png";
+import md from "../assets/md.png";
+import gb from "../assets/gb.png";
+import bo from "../assets/bo.png";
+import vbc from "../assets/vbc.png";
+import plf from "../assets/plf.png";
+import tflc from "../assets/tflc.png";
+import vvv from "../assets/vvv.png";
+import delina from "../assets/delina.png";
+import libreIntense from "../assets/libre-intense.png";
+import myWay from "../assets/my-way.png";
+import goodGirl from "../assets/good-girl.png";
+import idole from "../assets/idole.png";
+import narcisoRouge from "../assets/narciso-rouge.png";
+import olympéa from "../assets/olympea.png";
+import twilly from "../assets/twilly.png";
+import si from "../assets/si.png";
+import linterdit from "../assets/linterdit.png";
+import FE from "../assets/FE.png";
+import OM from "../assets/OM.png";
+import FL from "../assets/FL.png";
+import LC from "../assets/LC.png";
 
 const FemaleCategory = () => {
   const [hoveredProduct, setHoveredProduct] = useState(null);
@@ -29,7 +51,7 @@ const FemaleCategory = () => {
       brand: "Chanel",
       price: 120,
       rating: 4.8,
-      image: "https://example.com/chanel.jpg",
+      image: cet,
     },
     {
       id: 2,
@@ -37,7 +59,7 @@ const FemaleCategory = () => {
       brand: "Dior",
       price: 95,
       rating: 4.7,
-      image: "https://example.com/dior.jpg",
+      image: md,
     },
     {
       id: 3,
@@ -45,7 +67,7 @@ const FemaleCategory = () => {
       brand: "Gucci",
       price: 110,
       rating: 4.6,
-      image: "https://example.com/gucci.jpg",
+      image: gb,
     },
     {
       id: 4,
@@ -53,7 +75,7 @@ const FemaleCategory = () => {
       brand: "YSL",
       price: 105,
       rating: 4.9,
-      image: "https://example.com/ysl.jpg",
+      image: bo,
     },
     {
       id: 5,
@@ -61,7 +83,7 @@ const FemaleCategory = () => {
       brand: "Versace",
       price: 85,
       rating: 4.5,
-      image: "https://example.com/versace.jpg",
+      image: vbc,
     },
     {
       id: 6,
@@ -69,7 +91,7 @@ const FemaleCategory = () => {
       brand: "Prada",
       price: 115,
       rating: 4.4,
-      image: "https://example.com/prada.jpg",
+      image: plf,
     },
     {
       id: 7,
@@ -77,7 +99,7 @@ const FemaleCategory = () => {
       brand: "Tom Ford",
       price: 250,
       rating: 4.9,
-      image: "https://example.com/tomford.jpg",
+      image: tflc,
     },
     {
       id: 8,
@@ -85,15 +107,95 @@ const FemaleCategory = () => {
       brand: "Valentino",
       price: 130,
       rating: 4.7,
-      image: "https://example.com/valentino.jpg",
+      image: vvv,
+    },
+    {
+      id: 9,
+      name: "Delina",
+      brand: "Parfums de Marly",
+      price: 280,
+      rating: 4.9,
+      image: delina,
+    },
+    {
+      id: 10,
+      name: "Libre Intense",
+      brand: "YSL",
+      price: 120,
+      rating: 4.8,
+      image: libreIntense,
+    },
+    {
+      id: 11,
+      name: "My Way",
+      brand: "Giorgio Armani",
+      price: 110,
+      rating: 4.6,
+      image: myWay,
+    },
+    {
+      id: 12,
+      name: "Good Girl",
+      brand: "Carolina Herrera",
+      price: 115,
+      rating: 4.7,
+      image: goodGirl,
+    },
+    {
+      id: 13,
+      name: "Idôle",
+      brand: "Lancôme",
+      price: 100,
+      rating: 4.5,
+      image: idole,
+    },
+    {
+      id: 14,
+      name: "Narciso Rouge",
+      brand: "Narciso Rodriguez",
+      price: 125,
+      rating: 4.6,
+      image: narcisoRouge,
+    },
+    {
+      id: 15,
+      name: "Olympéa",
+      brand: "Paco Rabanne",
+      price: 110,
+      rating: 4.4,
+      image: olympéa,
+    },
+    {
+      id: 16,
+      name: "Twilly d’Hermès",
+      brand: "Hermès",
+      price: 135,
+      rating: 4.7,
+      image: twilly,
+    },
+    {
+      id: 17,
+      name: "Si Eau de Parfum",
+      brand: "Giorgio Armani",
+      price: 125,
+      rating: 4.7,
+      image: si,
+    },
+    {
+      id: 18,
+      name: "L’Interdit",
+      brand: "Givenchy",
+      price: 115,
+      rating: 4.6,
+      image: linterdit,
     },
   ];
 
   const featuredCollections = [
-    { name: "Floral Elegance", image: "https://example.com/floral.jpg" },
-    { name: "Oriental Mystique", image: "https://example.com/oriental.jpg" },
-    { name: "Fresh & Light", image: "https://example.com/fresh.jpg" },
-    { name: "Luxury Classics", image: "https://example.com/luxury.jpg" },
+    { name: "Floral Elegance", image: FE },
+    { name: "Oriental Mystique", image: OM },
+    { name: "Fresh & Light", image: FL },
+    { name: "Luxury Classics", image: LC },
   ];
 
   const variants = {
