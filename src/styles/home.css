@@ -2,5 +2,10 @@
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
+  margin: 120px auto;
+}
+@media (max-width: 768px) {
+  .content {
+    margin: 40px auto;
+  }
 }

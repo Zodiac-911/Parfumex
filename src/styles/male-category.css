@@ -1,6 +1,6 @@
 .male-category-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 120px auto;
   padding: 2rem;
   color: white;
   font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -525,7 +525,7 @@
   padding: 0.8rem 1.5rem;
   border: none;
   width: 300px;
-  border-radius: 50px;
+  border-radius: 50px 0 0 50px;
   font-size: 1rem;
   background: rgba(255, 255, 255, 0.1);
   color: white;
@@ -545,7 +545,8 @@
   border: none;
   padding: 0.8rem 2rem;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 0 50px 50px 0;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -642,6 +643,16 @@
   .type-card {
     width: 160px;
   }
+  .newsletter-section button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+    border-radius: 50px;
+  }
+  .newsletter-section input[type="email"] {
+    border-radius: 50px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -665,5 +676,10 @@
     width: 100%;
     margin-left: 0;
     margin-top: 1rem;
+    border-radius: 50px;
+  }
+  .newsletter-section input[type="email"] {
+    border-radius: 50px;
+    width: 100%;
   }
 }

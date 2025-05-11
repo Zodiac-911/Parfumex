@@ -11,6 +11,7 @@
 .card {
   background-color: #ffffff;
   border-radius: 16px;
+  width: 100%;
   overflow: hidden;
   display: flex;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -31,7 +32,7 @@
 }
 
 .card:hover .card-img {
-  transform: scale(1.08);
+  transform: scale(1.02);
 }
 
 .card-txt {

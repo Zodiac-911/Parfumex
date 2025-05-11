@@ -4,7 +4,7 @@
   background-color: #431370;
   height: 360px;
   border-radius: 28px;
-  margin-top: 80px;
+
   justify-content: center;
   align-items: center;
   transition: all 0.5s;
@@ -64,7 +64,6 @@
     height: auto; /* Allow height to adjust based on content */
     padding: 20px; /* Add padding for spacing */
     text-align: center;
-    margin-top: 200px;
   }
 
   .banner-text h1 {
@@ -85,6 +84,7 @@
 /* 🔁 Small Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .banner-container {
+    margin-top: 32px;
   }
 
   .banner-text h1 {

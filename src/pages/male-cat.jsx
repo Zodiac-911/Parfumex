@@ -1,6 +1,18 @@
 import React from "react";
 import "../styles/male-category.css";
 import { motion } from "framer-motion";
+import gaultier from "../assets/JeanPaulGaultierLeMaleElixirEauDeParfum125ml_900x.webp";
+import extreme from "../assets/tom-ford-noir-extreme.png";
+import sauvage from "../assets/christian_dior_sauvage_elixir.png";
+import bdc from "../assets/bleu-de-chanel.png";
+import pri from "../assets/Paco-Rabanne-Invictus.png";
+import yLeParfum from "../assets/ysl-y-le-parfum.png";
+import armaniCode from "../assets/armani-code.png";
+import oneMillion from "../assets/one-million.png";
+import bossBottled from "../assets/hugo-boss-bottled.png";
+import spicebomb from "../assets/viktor-rolf-spicebomb.png";
+import valentinoUomo from "../assets/valentino-uomo.png";
+import pradaLuna from "../assets/prada-luna-rossa.png";
 
 function MaleCategory() {
   const products = [
@@ -8,31 +20,74 @@ function MaleCategory() {
       name: "Le Male Elixir",
       brand: "Jean Paul Gaultier",
       price: "21,000 DZD",
-      img: "gaultier.jpg",
+      img: gaultier,
     },
     {
       name: "Tom Ford Noir Extreme",
       brand: "Tom Ford",
       price: "19,800 DZD",
-      img: "noir-extreme.jpg",
+      img: extreme,
     },
     {
       name: "Sauvage Elixir",
       brand: "Dior",
       price: "24,000 DZD",
-      img: "sauvage.jpg",
+      img: sauvage,
     },
     {
       name: "Bleu de Chanel",
       brand: "Chanel",
       price: "23,000 DZD",
-      img: "bleu.jpg",
+      img: bdc,
     },
     {
       name: "Invictus",
       brand: "Paco Rabanne",
       price: "19,800 DZD",
-      img: "invictus.jpg",
+      img: pri,
+    },
+
+    {
+      name: "Y Le Parfum",
+      brand: "Yves Saint Laurent",
+      price: "22,500 DZD",
+      img: yLeParfum,
+    },
+    {
+      name: "Armani Code",
+      brand: "Giorgio Armani",
+      price: "21,000 DZD",
+      img: armaniCode,
+    },
+    {
+      name: "1 Million",
+      brand: "Paco Rabanne",
+      price: "20,500 DZD",
+      img: oneMillion,
+    },
+    {
+      name: "Boss Bottled",
+      brand: "Hugo Boss",
+      price: "18,900 DZD",
+      img: bossBottled,
+    },
+    {
+      name: "Spicebomb Extreme",
+      brand: "Viktor & Rolf",
+      price: "23,500 DZD",
+      img: spicebomb,
+    },
+    {
+      name: "Valentino Uomo Intense",
+      brand: "Valentino",
+      price: "24,000 DZD",
+      img: valentinoUomo,
+    },
+    {
+      name: "Luna Rossa Carbon",
+      brand: "Prada",
+      price: "22,800 DZD",
+      img: pradaLuna,
     },
   ];
 
@@ -104,7 +159,7 @@ function MaleCategory() {
             >
               <div
                 className="product-img"
-                style={{ backgroundImage: `url(/assets/${product.img})` }}
+                style={{ backgroundImage: `url(${product.img})` }}
               ></div>
               <div className="product-info">
                 <h3>{product.name}</h3>
@@ -121,10 +176,10 @@ function MaleCategory() {
       <section className="why-choose-section">
         <h2>Why Choose Us?</h2>
         <ul>
-          <li>✔ 100% Authentic Perfumes</li>
-          <li>✔ Premium Packaging</li>
-          <li>✔ VIP Customer Support</li>
-          <li>✔ Fast Delivery Across Algeria</li>
+          <li> 100% Authentic Perfumes</li>
+          <li> Premium Packaging</li>
+          <li> VIP Customer Support</li>
+          <li> Fast Delivery Across Algeria</li>
         </ul>
       </section>
 
@@ -155,6 +210,7 @@ function MaleCategory() {
         <p>
           Join our newsletter and never miss a luxury launch or special offer.
         </p>
+
         <input type="email" placeholder="Enter your email" />
         <button>Subscribe</button>
       </section>
