@@ -250,6 +250,9 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .pricing-container {
+    margin: 60px auto 0 auto;
+  }
   .pricing-hero h1 {
     font-size: 2.2rem;
   }

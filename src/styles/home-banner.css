@@ -64,6 +64,8 @@
     height: auto; /* Allow height to adjust based on content */
     padding: 20px; /* Add padding for spacing */
     text-align: center;
+    border-radius: 0;
+    background-color: transparent;
   }
 
   .banner-text h1 {

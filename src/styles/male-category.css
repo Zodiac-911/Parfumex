@@ -626,6 +626,7 @@
 @media (max-width: 768px) {
   .male-category-container {
     padding: 1.5rem;
+    margin: 48px auto;
   }
 
   .hero-text h1 {
